@@ -1,0 +1,37 @@
+{
+  "default_model_to_load": "pytorch_yolov3",
+  "pytorch_yolov3" : {
+    "path_to_model_config": "resources/model_config/pytorch_yolov3/yolov3.cfg",
+    "path_to_model_weights": "resources/model_weights/pytorch_yolov3/yolov3.weights",
+    "path_to_model_labels": "resources/model_labels/pytorch_yolov3/coco.names",
+    "number_cpu_workers": 9,
+    "batch_size": 5,
+    "image_resize": 608,
+    "image_number_channels": 3,
+    "confidence_threshold": 0.8,
+    "nms_threshold": 0.4,
+    "device": "cuda:0"
+  }, "pytorch_yolov3_tiny" : {
+    "path_to_model_config": "resources/model_config/pytorch_yolov3_tiny/yolov3-tiny.cfg",
+    "path_to_model_weights": "resources/model_weights/pytorch_yolov3_tiny/yolov3-tiny.weights",
+    "path_to_model_labels": "resources/model_labels/pytorch_yolov3_tiny/coco.names",
+    "number_cpu_workers": 9,
+    "batch_size": 5,
+    "image_resize": 608,
+    "image_number_channels": 3,
+    "confidence_threshold": 0.8,
+    "nms_threshold": 0.4,
+    "device": "cuda:0"
+  }, "pytorch_yolov3_traffic" : {
+    "path_to_model_config": "resources/model_config/pytorch_yolov3_traffic/yolov3_traffic.cfg",
+    "path_to_model_weights": "resources/model_weights/pytorch_yolov3_traffic/yolov3_traffic.weights",
+    "path_to_model_labels": "resources/model_labels/pytorch_yolov3_traffic/traffic.names",
+    "number_cpu_workers": 9,
+    "batch_size": 1,
+    "image_resize": 608,
+    "image_number_channels": 3,
+    "confidence_threshold": 0.95,
+    "nms_threshold": 0.5,
+    "device": "cuda:0"
+  }
+}
